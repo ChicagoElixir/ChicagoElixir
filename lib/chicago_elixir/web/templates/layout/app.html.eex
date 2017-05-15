@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ChicagoElixir - Chicago's Elixir, Phoenix and Erlang Meetup</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="ChicagoElixir - Chicago's Elixir, Phoenix and Erlang Meetup">
+    <meta name="author" content="themecube">
+
+    <!-- viewport settings -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <link rel="stylesheet" href="css/pe-icon-7-stroke.css">
+    <link rel="stylesheet" href="css/helper.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/salvattore.css">
+    <link rel="stylesheet" href="css/jquery.countdown.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <link rel="stylesheet" href="css/owl.transitions.css">
+    <link rel="stylesheet" href="css/revolution.css">
+    <link rel="stylesheet" href="css/revolution-extralayers.css">
+
+    <link rel="stylesheet" href="css/main.css">
+
+
+    <!-- Font -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+
+  </head>
+
+  <body>
+      <!-- NAVIGATION -->
+      <nav id="nav-primary" class="navbar navbar-custom" role="navigation">
+        <div class="container">
+
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a href="index.html" class="logo-link"><img src="img/chicago_elixir_logo.png" alt="logo"></a>
+          </div>
+
+          <div class="collapse navbar-collapse" id="nav">
+            <ul class="nav navbar-nav navbar-right uppercase">
+              <li><a data-toggle="elementscroll" href="#info">About</a></li>
+              <li><a data-toggle="elementscroll" href="#venue">Venue</a></li>
+              <%# <li><a data-toggle="elementscroll" href="#gallery">Gallery</a></li> %>
+              <li><a data-toggle="elementscroll" href="#sponsors">Sponsors</a></li>
+              <li><a data-toggle="elementscroll" href="#footer">Contact</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </nav>
+
+      <!-- FULLSCREEN SLIDER -->
+      <div class="tp-banner-container">
+        <div class="tp-banner">
+          <ul>
+            <!-- SLIDE 1 -->
+            <li
+              data-transition="slidevertical"
+              data-slotamount="1"
+              data-masterspeed="1000"
+              data-saveperformance="off"
+              data-title="Slide">
+              <!-- MAIN IMAGE -->
+              <img src="img/slide1.jpg"  alt="fullslide1"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+            </li>
+
+            <!-- SLIDE 2 -->
+            <li
+              data-transition="slidevertical"
+              data-slotamount="1"
+              data-masterspeed="1000"
+              data-saveperformance="off"
+              data-title="Slide">
+              <!-- MAIN IMAGE -->
+              <img src="img/slide2.jpg"  alt="fullslide2"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+            </li>
+
+            <!-- SLIDE 3 -->
+            <li
+              data-transition="slidevertical"
+              data-slotamount="1"
+              data-masterspeed="1000"
+              data-saveperformance="off"
+              data-title="Slide">
+
+              <!-- MAIN IMAGE -->
+              <img src="img/slide3.jpg"  alt="fullslide6"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+            </li>
+
+            <!-- SLIDE 4 -->
+            <li
+              data-transition="slidevertical"
+              data-slotamount="1"
+              data-masterspeed="1000"
+              data-saveperformance="off"
+              data-title="Slide">
+              <!-- MAIN IMAGE -->
+              <img src="img/slide4.jpg"  alt="fullslide7"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+            </li>
+          </ul>
+          <div class="tp-bannertimer"></div>
+        </div>
+      </div>
+
+
+      <!-- INFO -->
+      <section id="info">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-lg-12 text-center">
+              <h1>ChicagoElixir</h1>
+              <p class="lead">
+                Come hang out with other Elixir enthusiasts and enjoy informative talks.
+              </p>
+            </div>
+
+            <div class="col-lg-10 col-lg-offset-1 col-md-12 text-center">
+              <div class="row">
+
+                <div class="feature col-lg-4 col-md-4 col-sm-4">
+                  <i class="pe-4x pe-7s-refresh-2"></i>
+                  <h4>New Topics</h4>
+                  <p>
+                    The Elixir community moves fast. Keep your skills sharp with
+                    new topics every month.
+                  </p>
+                </div>
+
+                <div class="feature col-lg-4 col-md-4 col-sm-4">
+                  <i class="pe-4x pe-7s-micro"></i>
+                  <h4>Speak at ChicagoElixir</h4>
+                  <p>
+                    Got something to share? We would love to have you speak at
+                    ChicagoElixir. We love hearing diverse opnions on many
+                    topics surrounding the Elixir community. To submit a
+                    proposal <a href="https://bit.ly/SpeakAtChicagoElixir"
+                      target="_blank">please fill this form</a>.
+                  </p>
+                </div>
+
+                <div class="feature col-lg-4 col-md-4 col-sm-4">
+                  <i class="pe-4x pe-7s-users"></i>
+                  <h4>Meet New People</h4>
+                  <p>
+                    Break out of your normal social circle and get exposed to
+                    new people and ideas. We enjoy hanging out after meetups and
+                    getting to know each other.
+                  </p>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- VENUE -->
+      <section id="venue">
+        <div class="venue">
+          <div class="venue-inner">
+            <div class="container">
+              <div class="row">
+
+                <div class="col-lg-8 col-md-8 col-sm-8">
+                  <h2 class="uppercase">venue</h2>
+                  <p class="lead">
+                    We provide a great casual space for community members to share
+                    knowledge and meet other developers who share the same
+                    passion for Elixir, Phoenix, Erlang and related technologies.
+                    Pizza, Beer and Soft drinks generously provided by our sponsors at Hashrocket.
+                  </p>
+                  <h4>Hashrocket Chicago</h4>
+                  <img class="img-responsive" src="img/hashrocket-chicago.jpg" alt="hashrocket chicago">
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                  <i class="pe-4x pe-7s-map-2"></i>
+                  <h4 class="uppercase">address</h4>
+                  <p>
+                    661 W Lake St, Floor 3N, Chicago, IL 60661<br>
+                    312-327-0207<br />
+                  </p>
+
+                  <a class="button button-xsmall button-line-light" href="https://www.google.com/maps/place/Hashrocket/@41.8853836,-87.647315,17z/data=!3m1!4b1!4m5!3m4!1s0x880e2cc58813a5d7:0x968e8408bab03d30!8m2!3d41.8853796!4d-87.645121">get directions</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- GALLERY -->
+      <%# <section id="gallery"> %>
+      <%#   <div class="container"> %>
+      <%#     <div class="row"> %>
+
+      <%#       <div class="col-lg-12"> %>
+      <%#         <h2 class="uppercase">gallery</h2> %>
+      <%#         <p class="lead">Nam pellentesque fringilla faucibus. Aliquam tortor ex, egestas porta eget, pretium at lorem.</p> %>
+
+      <%#         <div id="timeline" data-columns> %>
+      <%#           <div class="item wrap"> %>
+      <%#             <img class="img-responsive" src="img/thumb1.png" alt=""> %>
+      <%#             <div class="overlay"></div> %>
+      <%#             <div class="icon"> %>
+      <%#               <a class="image-popup" href="img/gallery-img.jpg" title="<h4>Sed at rutrum felis</h4>Curabitur nec metus tempor, malesuada quam a, laoreet urna."><i class="pe-3x pe-7s-plus"></i></a> %>
+      <%#             </div> %>
+      <%#           </div> %>
+
+      <%#           <div class="item wrap"> %>
+      <%#             <img class="img-responsive" src="img/thumb2.png" alt=""> %>
+      <%#             <div class="overlay"></div> %>
+      <%#             <div class="icon"> %>
+      <%#               <a class="image-popup" href="img/gallery-img.jpg" title="<h4>Sed at rutrum felis</h4>Curabitur nec metus tempor, malesuada quam a, laoreet urna."><i class="pe-3x pe-7s-plus"></i></a> %>
+      <%#             </div> %>
+      <%#           </div> %>
+
+      <%#           <div class="item wrap"> %>
+      <%#             <img class="img-responsive" src="img/thumb3.png" alt=""> %>
+      <%#             <div class="overlay"></div> %>
+      <%#             <div class="icon"> %>
+      <%#               <a class="image-popup" href="img/gallery-img.jpg" title="<h4>Sed at rutrum felis</h4>Curabitur nec metus tempor, malesuada quam a, laoreet urna."><i class="pe-3x pe-7s-plus"></i></a> %>
+      <%#             </div> %>
+      <%#           </div> %>
+
+      <%#           <div class="item wrap"> %>
+      <%#             <img class="img-responsive" src="img/thumb4.png" alt=""> %>
+      <%#             <div class="overlay"></div> %>
+      <%#             <div class="icon"> %>
+      <%#               <a class="image-popup" href="img/gallery-img.jpg" title="<h4>Sed at rutrum felis</h4>Curabitur nec metus tempor, malesuada quam a, laoreet urna."><i class="pe-3x pe-7s-plus"></i></a> %>
+      <%#             </div> %>
+      <%#           </div> %>
+
+      <%#           <div class="item wrap"> %>
+      <%#             <img class="img-responsive" src="img/thumb5.png" alt=""> %>
+      <%#             <div class="overlay"></div> %>
+      <%#             <div class="icon"> %>
+      <%#               <a class="image-popup" href="img/gallery-img.jpg" title="<h4>Sed at rutrum felis</h4>Curabitur nec metus tempor, malesuada quam a, laoreet urna."><i class="pe-3x pe-7s-plus"></i></a> %>
+      <%#             </div> %>
+      <%#           </div> %>
+
+      <%#           <div class="item wrap"> %>
+      <%#             <img class="img-responsive" src="img/thumb6.png" alt=""> %>
+      <%#             <div class="overlay"></div> %>
+      <%#             <div class="icon"> %>
+      <%#               <a class="image-popup" href="img/gallery-img.jpg" title="<h4>Sed at rutrum felis</h4>Curabitur nec metus tempor, malesuada quam a, laoreet urna."><i class="pe-3x pe-7s-plus"></i></a> %>
+      <%#             </div> %>
+      <%#           </div> %>
+
+      <%#           <div class="item wrap"> %>
+      <%#             <img class="img-responsive" src="img/thumb7.png" alt=""> %>
+      <%#             <div class="overlay"></div> %>
+      <%#             <div class="icon"> %>
+      <%#               <a class="image-popup" href="img/gallery-img.jpg" title="<h4>Sed at rutrum felis</h4>Curabitur nec metus tempor, malesuada quam a, laoreet urna."><i class="pe-3x pe-7s-plus"></i></a> %>
+      <%#             </div> %>
+      <%#           </div> %>
+
+      <%#           <div class="item wrap"> %>
+      <%#             <img class="img-responsive" src="img/thumb8.png" alt=""> %>
+      <%#             <div class="overlay"></div> %>
+      <%#             <div class="icon"> %>
+      <%#               <a class="image-popup" href="img/gallery-img.jpg" title="<h4>Sed at rutrum felis</h4>Curabitur nec metus tempor, malesuada quam a, laoreet urna."><i class="pe-3x pe-7s-plus"></i></a> %>
+      <%#             </div> %>
+      <%#           </div> %>
+
+      <%#           <div class="item wrap"> %>
+      <%#             <img class="img-responsive" src="img/thumb9.png" alt=""> %>
+      <%#             <div class="overlay"></div> %>
+      <%#             <div class="icon"> %>
+      <%#               <a class="image-popup" href="img/gallery-img.jpg" title="<h4>Sed at rutrum felis</h4>Curabitur nec metus tempor, malesuada quam a, laoreet urna."><i class="pe-3x pe-7s-plus"></i></a> %>
+      <%#             </div> %>
+      <%#           </div> %>
+
+      <%#           <div class="item wrap"> %>
+      <%#             <img class="img-responsive" src="img/thumb10.png" alt=""> %>
+      <%#             <div class="overlay"></div> %>
+      <%#             <div class="icon"> %>
+      <%#               <a class="image-popup" href="img/gallery-img.jpg" title="<h4>Sed at rutrum felis</h4>Curabitur nec metus tempor, malesuada quam a, laoreet urna."><i class="pe-3x pe-7s-plus"></i></a> %>
+      <%#             </div> %>
+      <%#           </div> %>
+
+      <%#           <div class="item wrap"> %>
+      <%#             <img class="img-responsive" src="img/thumb11.png" alt=""> %>
+      <%#             <div class="overlay"></div> %>
+      <%#             <div class="icon"> %>
+      <%#               <a class="image-popup" href="img/gallery-img.jpg" title="<h4>Sed at rutrum felis</h4>Curabitur nec metus tempor, malesuada quam a, laoreet urna."><i class="pe-3x pe-7s-plus"></i></a> %>
+      <%#             </div> %>
+      <%#           </div> %>
+
+      <%#           <div class="item wrap"> %>
+      <%#             <img class="img-responsive" src="img/thumb12.png" alt=""> %>
+      <%#             <div class="overlay"></div> %>
+      <%#             <div class="icon"> %>
+      <%#               <a class="image-popup" href="img/gallery-img.jpg" title="<h4>Sed at rutrum felis</h4>Curabitur nec metus tempor, malesuada quam a, laoreet urna."><i class="pe-3x pe-7s-plus"></i></a> %>
+      <%#             </div> %>
+      <%#           </div> %>
+
+      <%#           <div class="item wrap"> %>
+      <%#             <img class="img-responsive" src="img/thumb13.png" alt=""> %>
+      <%#             <div class="overlay"></div> %>
+      <%#             <div class="icon"> %>
+      <%#               <a class="image-popup" href="img/gallery-img.jpg" title="<h4>Sed at rutrum felis</h4>Curabitur nec metus tempor, malesuada quam a, laoreet urna."><i class="pe-3x pe-7s-plus"></i></a> %>
+      <%#             </div> %>
+      <%#           </div> %>
+
+      <%#           <div class="item wrap"> %>
+      <%#             <img class="img-responsive" src="img/thumb14.png" alt=""> %>
+      <%#             <div class="overlay"></div> %>
+      <%#             <div class="icon"> %>
+      <%#               <a class="image-popup" href="img/gallery-img.jpg" title="<h4>Sed at rutrum felis</h4>Curabitur nec metus tempor, malesuada quam a, laoreet urna."><i class="pe-3x pe-7s-plus"></i></a> %>
+      <%#             </div> %>
+      <%#           </div> %>
+
+
+      <%#         </div> %>
+      <%#       </div> %>
+
+      <%#     </div> %>
+      <%#   </div> %>
+      <%# </section> %>
+
+      <!-- TESTIMONIAL -->
+      <section id="testimonial">
+        <div class="container-fluid">
+          <div class="row">
+
+            <div class="col-lg-6 col-lg-offset-6 col-md-6 col-md-offset-6 no-padding">
+              <div class="testimonial-inner">
+                <h2 class="hidden">testimonial</h2>
+
+                <div id="testimonial-carousel">
+                  <div class="item">
+                    <img class="img-circle" src="img/pedro.jpg" alt="">
+                    <p class="lead">Very happy to see the meetup growing in attendance, it shows Elixir is getting traction in Chicago.</p>
+                    <p class="name">Pedro Assumpcao</p>
+                  </div>
+
+                  <div class="item">
+                    <img class="img-circle" src="img/michael-king.jpg" alt="">
+                    <p class="lead">Great, learning a lot every time I can make it.</p>
+                    <p class="name">Michael King</p>
+                  </div>
+
+                  <div class="item">
+                    <img class="img-circle" src="img/greg.jpg" alt="">
+                    <p class="lead">First time there, very pleasant and worthwhile</p>
+                    <p class="name">Greg Baran</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- SPONSORS -->
+      <section id="sponsors">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <h2 class="uppercase">sponsors</h2>
+              <p class="lead">Our sponsors help the community thrive</p>
+
+              <div class="sponsor">
+                <img class="img-responsive" src="img/hashrocket-logo.png" alt="hashrocket logo">
+                Hashrocket - A full-stack development and design consultancy specializing in Elixir, Phoenix and Ruby on Rails. Based in Chicago, IL and Jacksonville, FL.
+                Hashrocket provides the meetup with space to meet, food, drinks, and swag.
+                <a href="https://hashrocket.com">Visit Hashrocket</a>
+              </div>
+
+              <div class="sponsor">
+                <img class="img-responsive" src="img/oreilly-logo.png" alt="oreilly logo">
+                O'REILLY - We partnered with O'Reilly, one of the most well known publishers in the tech community to provide discounts and resources to our meetup attendees.
+                <a href="https://www.oreilly.com/">Visit O'REILLY</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- google map -->
+      <div id="gmap_canvas"></div>
+
+      <!-- FOOTER -->
+      <footer id="footer">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-lg-3 col-md-3 col-sm-6">
+              <h4 class="uppercase">ChicagoElixir</h4>
+              <p class="small">The premier Elixir, Phoenix and Erlang meetup in Chicago, IL. Connect with us on social media:</p>
+              <ul class="list-unstyled list-inline uppercase">
+                <li><a href="https://www.meetup.com/ChicagoElixir/"><i class="fa fa-lg fa-meetup"></i></a></li>
+                <li><a href="https://twitter.com/ChicagoElixir"><i class="fa fa-lg fa-twitter"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UCuBLulAIH2ow5l0PhMrJzfQ"><i class="fa fa-lg fa-youtube"></i></a></li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-6">
+              <h4 class="uppercase">FAQ</h4>
+
+                Have a question? Contact us and we will publish our answer here if we think it will be helpful for others too.
+              <%# <dl class="faqs"> %>
+                <%# <dt>Is this the first question?</dt> %>
+                <%# <dd class="small">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</dd> %>
+
+                <%# <dt>Mauris ac metus in justo rhoncus?</dt> %>
+                <%# <dd class="small">Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</dd> %>
+
+                <%# <dt>Praesent eleifend lacinia?</dt> %>
+                <%# <dd class="small">Nam eget dui. Etiam rhoncus. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo.</dd> %>
+
+                <%# <dt> Cras id metus vitae?</dt> %>
+                <%# <dd class="small">Vivamus dignissim urna id condimentum lacinia. Fusce tristique ultrices est, at semper turpis ullamcorper eu.</dd> %>
+              <%# </dl> %>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <h4 class="uppercase">Meetup.com</h4>
+              Visit us on Meetup.com to stay up to date and RSVP to upcoming meetups
+                <a href="https://www.meetup.com/ChicagoElixir/">https://www.meetup.com/ChicagoElixir/</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <!-- SUBFOOTER -->
+      <div class="subfooter">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-lg-12">
+              <ul class="list-unstyled list-inline pull-right uppercase">
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <script src="js/jquery-1.11.1.min.js"></script>
+      <script type="text/javascript" src="http://maps.google.com/maps/api/js"></script>
+      <script src="js/jquery.themepunch.tools.min.js"></script>
+      <script src="js/jquery.themepunch.revolution.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/jquery.sticky.js"></script>
+      <script src="js/jquery.magnific-popup.min.js"></script>
+      <script src="js/salvattore.js"></script>
+      <script src="js/jquery.countdown.js"></script>
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/waypoints.min.js"></script>
+      <script src="js/jquery.counterup.min.js"></script>
+      <script src="js/owl.carousel.min.js"></script>
+      <%# <script src="js/retina.js"></script> %>
+
+      <script src="js/main.js"></script>
+  </body>
+</html>
