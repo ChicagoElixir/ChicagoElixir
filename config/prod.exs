@@ -15,8 +15,9 @@ use Mix.Config
 # which you typically run after static files are built.
 config :chicago_elixir, ChicagoElixir.Web.Endpoint,
   on_init: {ChicagoElixir.Web.Endpoint, :load_from_system_env, []},
-  url: [host: "example.com", port: 80],
-  cache_static_manifest: "priv/static/cache_manifest.json"
+  url: [host: "chicagoelixir.com", port: 80],
+  cache_static_manifest: "priv/static/cache_manifest.json",
+  secret_key_base: System.get_env("SECRET_KEY_BASE"),
 
 # Do not print debug messages in production
 config :logger, level: :info
@@ -46,6 +47,13 @@ config :logger, level: :info
 #
 # Check `Plug.SSL` for all available options in `force_ssl`.
 
+
+config :chicago_elixir, ChicagoElixir.Repo,
+  adapter: Ecto.Adapters.Postgres,
+  url: System.get_env("DATABASE_URL"),
+  pool_size: String.to_integer(System.get_env("POOL_SIZE") || "10"),
+  ssl: true
+
 # ## Using releases
 #
 # If you are doing OTP releases, you need to instruct Phoenix
@@ -58,7 +66,3 @@ config :logger, level: :info
 #
 #     config :chicago_elixir, ChicagoElixir.Web.Endpoint, server: true
 #
-
-# Finally import the config/prod.secret.exs
-# which should be versioned separately.
-import_config "prod.secret.exs"
