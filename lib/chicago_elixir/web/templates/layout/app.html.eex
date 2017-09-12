@@ -60,6 +60,7 @@
           <div class="collapse navbar-collapse" id="nav">
             <ul class="nav navbar-nav navbar-right uppercase">
               <li><a data-toggle="elementscroll" href="#info">About</a></li>
+              <li><a data-toggle="elementscroll" href="#next-meetup">Next Meetup</a></li>
               <li><a data-toggle="elementscroll" href="#venue">Venue</a></li>
               <%# <li><a data-toggle="elementscroll" href="#gallery">Gallery</a></li> %>
               <li><a data-toggle="elementscroll" href="#sponsors">Sponsors</a></li>
@@ -123,7 +124,6 @@
         </div>
       </div>
 
-
       <!-- INFO -->
       <section id="info">
         <div class="container">
@@ -175,6 +175,33 @@
               </div>
             </div>
 
+          </div>
+        </div>
+      </section>
+
+      <section id="next-meetup" class="next-meetup">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-lg-12 text-center">
+              <h1 class="uppercase">Next Meetup</h1>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-8">
+              <h4 class="uppercase"><%= @next_meetup[:title] %></h4>
+              <div class="meetup-countdown-container">
+                <span class="countdown-label">When:</span>
+                <div class="meetup-countdown">
+                  <%= @next_meetup[:time] %>
+                </div>
+                <a class="rsvp-link" href="<%= @next_meetup[:url] %>" target="_blank">RSVP</a>
+              </div>
+              <p class="lead">
+                <%= raw @next_meetup[:description] %>
+              </p>
+            </div>
           </div>
         </div>
       </section>

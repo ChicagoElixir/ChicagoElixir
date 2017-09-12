@@ -17,6 +17,8 @@ config :chicago_elixir, ChicagoElixir.Web.Endpoint,
   pubsub: [name: ChicagoElixir.PubSub,
            adapter: Phoenix.PubSub.PG2]
 
+config :chicago_elixir, :meetup_api, ChicagoElixir.Meetup.Api
+
 # Configures Elixir's Logger
 config :logger, :console,
   format: "$time $metadata[$level] $message\n",

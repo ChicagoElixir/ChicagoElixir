@@ -17,3 +17,5 @@ config :chicago_elixir, ChicagoElixir.Repo,
   database: "chicago_elixir_test",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox
+
+config :chicago_elixir, :meetup_api, ChicagoElixir.Meetup.TestApi

@@ -246,27 +246,29 @@ a {
 
 /* countdown */
 
-#countdown {
-  margin-top: 0;
+.next-meetup .meetup-countdown-container {
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
 }
 
-#countdown .countdown_amount {
-  color: #666666;
-  font-family: 'montserratregular';
-  font-size: 40px;
-  line-height: 50px;
-  text-align: left;
-  text-align: center;
+.next-meetup .meetup-countdown {
+  background: rgba(35, 22, 36, 0.8);
+  color: #fff;
+  padding: 10px;
 }
 
-#countdown .countdown_section {
-  color: #262626;
-  font-family: 'montserratbold';
-  font-size: 13px;
-  letter-spacing: 0;
-  line-height: 10px;
-  text-align: left;
-  text-align: center;
+.next-meetup .countdown-label {
+  color: #000;
+  font-size: 1em;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.next-meetup .rsvp-link {
+  background: #894cd0;
+  color: #fff;
+  padding: 10px;
 }
 
 /* SPEAKER */
