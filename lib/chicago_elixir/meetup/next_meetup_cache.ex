@@ -2,7 +2,7 @@ defmodule ChicagoElixir.Meetup.NextMeetupCache do
   use GenServer
 
   @interval 1 * 60 * 60 * 1000 # every hour
-  @api Application.get_env(:chicago_elixir, :meetup_api)
+  @api Application.fetch_env!(:chicago_elixir, :meetup_api)
   @time_format "{WDshort} {M}/{D} {h12}:{m}{am}"
 
   def start_link(state \\ %{}) do
