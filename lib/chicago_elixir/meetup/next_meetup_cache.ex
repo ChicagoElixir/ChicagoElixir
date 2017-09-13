@@ -44,11 +44,15 @@ defmodule ChicagoElixir.Meetup.NextMeetupCache do
     meetup = %{
       time: meetup_time(next_meetup),
       title: next_meetup["name"],
-      description: next_meetup["description"],
+      description: meetup_description(next_meetup),
       url: next_meetup["link"],
     }
 
     {:reply, meetup, state}
+  end
+
+  defp meetup_description(meetup) do
+    HtmlSanitizeEx.basic_html(meetup["description"])
   end
 
   defp meetup_time(meetup) do

@@ -50,6 +50,7 @@ defmodule ChicagoElixir.Mixfile do
       {:poison, "~> 3.1"},
       {:timex, "~> 3.1"},
       {:exfmt, "~> 0.3.0"},
+      {:html_sanitize_ex, "~> 1.3"},
     ]
   end
 

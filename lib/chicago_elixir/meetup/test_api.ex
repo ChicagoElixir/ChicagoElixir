@@ -5,7 +5,7 @@ defmodule ChicagoElixir.Meetup.TestApi do
         %{
           "time" => tomorrow_unix_time(),
           "name" => "Elixir Hack Night",
-          "description" => "Come hack on Elixir",
+          "description" => "<p>Come hack on <script>Elixir();</script></p>",
           "link" => "https://meetup.com/ChicagoElixir/events/1234",
         }
       ]

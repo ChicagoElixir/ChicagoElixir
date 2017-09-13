@@ -14,9 +14,9 @@ defmodule ChicagoElixir.Meetup.NextMeetupCacheTest do
       assert title == "Elixir Hack Night"
     end
 
-    test "returns the description for next meetup" do
+    test "returns a sanitized html description for next meetup" do
       description = NextMeetupCache.next_meetup()[:description]
-      assert description == "Come hack on Elixir"
+      assert description == "<p>Come hack on Elixir();</p>"
     end
 
     test "returns the url for next meetup" do
