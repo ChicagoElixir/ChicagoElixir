@@ -1,7 +1,7 @@
 defmodule ChicagoElixir.Meetup.NextMeetupCache do
   use GenServer
 
-  @interval 2 * 60 * 60 * 1000 # every 2 hours
+  @interval 1 * 60 * 60 * 1000 # every hour
   @api Application.get_env(:chicago_elixir, :meetup_api)
   @time_format "{WDshort} {M}/{D} {h12}:{m}{am}"
 
