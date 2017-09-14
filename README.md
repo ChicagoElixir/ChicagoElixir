@@ -11,3 +11,16 @@ To start your Phoenix server:
   * Start Phoenix endpoint with `mix phx.server`
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+
+
+---
+
+### About
+
+[![Hashrocket logo](https://hashrocket.com/hashrocket_logo.svg)](https://hashrocket.com)
+
+ChicagoElixir is supported by the team at [Hashrocket, an Elixir and Phoenix
+consultancy](https://hashrocket.com/elixir). If you'd like
+to [work with us](https://hashrocket.com/contact-us/hire-us) or [join our
+team](https://hashrocket.com/contact-us/jobs), don't hesitate to get in
+touch.
