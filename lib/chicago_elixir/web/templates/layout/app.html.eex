@@ -182,34 +182,27 @@
       <section id="next-meetup" class="next-meetup">
         <div class="container">
           <div class="row">
+
             <div class="col-lg-12 text-center">
               <h1 class="uppercase">Next Meetup</h1>
             </div>
           </div>
 
-          <% if @next_meetup[:time] == "TBD" do %>
-            <div class="row">
-              <div class="col-lg-8 col-md-8 col-sm-8">
-                <h4 class="uppercase">TBD</h4>
-              </div>
-            </div>
-          <% else %>
-            <div class="row">
-              <div class="col-lg-8 col-md-8 col-sm-8">
-                <h4 class="uppercase"><%= @next_meetup[:title] %></h4>
-                <div class="meetup-countdown-container">
-                  <span class="countdown-label">When:</span>
-                  <div class="meetup-countdown">
-                    <%= @next_meetup[:time] %>
-                  </div>
-                  <a class="rsvp-link" href="<%= @next_meetup[:url] %>" target="_blank">RSVP</a>
+          <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-8">
+              <h4 class="uppercase"><%= @next_meetup[:title] %></h4>
+              <div class="meetup-countdown-container">
+                <span class="countdown-label">When:</span>
+                <div class="meetup-countdown">
+                  <%= @next_meetup[:time] %>
                 </div>
-                <p class="lead">
-                  <%= raw @next_meetup[:description] %>
-                </p>
+                <a class="rsvp-link" href="<%= @next_meetup[:url] %>" target="_blank">RSVP</a>
               </div>
+              <p class="lead">
+                <%= raw @next_meetup[:description] %>
+              </p>
             </div>
-          <% end %>
+          </div>
         </div>
       </section>
 
