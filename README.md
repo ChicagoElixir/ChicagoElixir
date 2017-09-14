@@ -1,4 +1,4 @@
-# ChicagoElixir
+![ChicagoElixir](/priv/static/img/chicago_elixir_logo.png)
 
 Check it out at [chicagoelixir.com](http://chicagoelixir.com/).
 
