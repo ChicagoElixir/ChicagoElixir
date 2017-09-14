@@ -33,11 +33,12 @@ defmodule ChicagoElixir.Meetup.NextMeetupCache do
   # server
 
   def handle_cast(:fetch, _state) do
-    data = @api.get!("events").body
     schedule_fetch()
+    data = @api.get!("events").body
     {:noreply, data}
   end
 
+  def handle_call(:next_meetup, _from, []), do: {:reply, nil, []}
   def handle_call(:next_meetup, _from, state) do
     [next_meetup|_] = state
 
@@ -58,17 +59,13 @@ defmodule ChicagoElixir.Meetup.NextMeetupCache do
   defp meetup_time(meetup) do
     time = meetup["time"]
 
-    if time do
-      local_time = time
-                   |> Timex.from_unix(:millisecond)
-                   |> Timex.Timezone.convert("America/Chicago")
+    local_time = time
+                 |> Timex.from_unix(:millisecond)
+                 |> Timex.Timezone.convert("America/Chicago")
 
 
-      formatted = Timex.format!(local_time, @time_format)
-      relative = Timex.format!(local_time, "{relative}", :relative)
-      "#{formatted} (#{relative})"
-    else
-      "TBD"
-    end
+    formatted = Timex.format!(local_time, @time_format)
+    relative = Timex.format!(local_time, "{relative}", :relative)
+    "#{formatted} (#{relative})"
   end
 end

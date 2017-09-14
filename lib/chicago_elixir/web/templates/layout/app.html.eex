@@ -188,21 +188,31 @@
             </div>
           </div>
 
-          <div class="row">
-            <div class="col-lg-8 col-md-8 col-sm-8">
-              <h4 class="uppercase"><%= @next_meetup[:title] %></h4>
-              <div class="meetup-countdown-container">
-                <span class="countdown-label">When:</span>
-                <div class="meetup-countdown">
-                  <%= @next_meetup[:time] %>
+          <%= if @next_meetup == nil do %>
+            <div class="row">
+              <div class="col-lg-12 text-center">
+                <div class="next-meetup-tba-message">
+                  TBA - We meet every second Wednesday of the month.
                 </div>
-                <a class="rsvp-link" href="<%= @next_meetup[:url] %>" target="_blank">RSVP</a>
               </div>
-              <p class="lead">
-                <%= raw @next_meetup[:description] %>
-              </p>
             </div>
-          </div>
+          <% else %>
+            <div class="row">
+              <div class="col-lg-8 col-md-8 col-sm-8">
+                <h4 class="uppercase"><%= @next_meetup[:title] %></h4>
+                <div class="meetup-countdown-container">
+                  <span class="countdown-label">When:</span>
+                  <div class="meetup-countdown">
+                    <%= @next_meetup[:time] %>
+                  </div>
+                  <a class="rsvp-link" href="<%= @next_meetup[:url] %>" target="_blank">RSVP</a>
+                </div>
+                <p class="lead">
+                  <%= raw @next_meetup[:description] %>
+                </p>
+              </div>
+            </div>
+          <% end %>
         </div>
       </section>
 

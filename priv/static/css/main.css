@@ -271,6 +271,10 @@ a {
   padding: 10px;
 }
 
+.next-meetup .next-meetup-tba-message {
+  font-size: 1.5em;
+}
+
 /* SPEAKER */
 
 #speakers {
