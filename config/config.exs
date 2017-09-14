@@ -17,7 +17,7 @@ config :chicago_elixir, ChicagoElixir.Web.Endpoint,
   pubsub: [name: ChicagoElixir.PubSub,
            adapter: Phoenix.PubSub.PG2]
 
-config :chicago_elixir, :meetup_api, ChicagoElixir.Meetup.Api
+config :chicago_elixir, :meetup_api_url, "https://api.meetup.com/ChicagoElixir/"
 
 # Configures Elixir's Logger
 config :logger, :console,

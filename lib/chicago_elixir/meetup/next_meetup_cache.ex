@@ -1,8 +1,9 @@
 defmodule ChicagoElixir.Meetup.NextMeetupCache do
   use GenServer
 
+  alias ChicagoElixir.Meetup.Api
+
   @interval 1 * 60 * 60 * 1000 # every hour
-  @api Application.fetch_env!(:chicago_elixir, :meetup_api)
   @time_format "{WDshort} {M}/{D} {h12}:{m}{am}"
 
   def start_link(state \\ %{}) do
@@ -34,7 +35,7 @@ defmodule ChicagoElixir.Meetup.NextMeetupCache do
 
   def handle_cast(:fetch, _state) do
     schedule_fetch()
-    data = @api.get!("events").body
+    data = Api.get!("events").body
     {:noreply, data}
   end
 
