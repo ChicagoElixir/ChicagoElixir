@@ -1,5 +1,7 @@
 ![ChicagoElixir](/priv/static/img/chicago_elixir_logo.png)
 
+[![Build Status](https://semaphoreci.com/api/v1/dkarter/chicagoelixir/branches/master/badge.svg)](https://semaphoreci.com/dkarter/chicagoelixir)
+
 Check it out at [chicagoelixir.com](http://chicagoelixir.com/).
 
 Join the meetup group at [meetup.com/ChicagoElixir](https://www.meetup.com/ChicagoElixir/).
