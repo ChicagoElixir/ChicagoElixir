@@ -23,8 +23,6 @@ defmodule ChicagoElixir.Mixfile do
       extra_applications: [
         :logger,
         :runtime_tools,
-        :httpoison,
-        :timex,
       ],
     ]
   end
