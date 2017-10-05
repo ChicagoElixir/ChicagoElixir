@@ -19,15 +19,11 @@ defmodule ChicagoElixir.Meetup.NextMeetupCache do
   end
 
   def fetch() do
-    GenServer.cast(pid(), :fetch)
+    GenServer.cast(__MODULE__, :fetch)
   end
 
   def next_meetup() do
-    GenServer.call(pid(), :next_meetup)
-  end
-
-  defp pid() do
-    Process.whereis(__MODULE__)
+    GenServer.call(__MODULE__, :next_meetup)
   end
 
   defp schedule_fetch() do
