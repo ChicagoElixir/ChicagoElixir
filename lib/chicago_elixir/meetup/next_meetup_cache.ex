@@ -11,7 +11,10 @@ defmodule ChicagoElixir.Meetup.NextMeetupCache do
   end
 
   def init(state) do
-    fetch()
+    unless Mix.env == :test do
+      fetch()
+    end
+
     {:ok, state}
   end
 
