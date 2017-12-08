@@ -1,0 +1,3 @@
+- [ ] fully migrate to the latest version of pheonix 1.3 (dir structure etc)
+- [ ] job board
+- [ ] speakers - below each speaker link to the video of their talk
