@@ -16,7 +16,7 @@ use Mix.Config
 config :chicago_elixir, ChicagoElixir.Web.Endpoint,
   init: {ChicagoElixir.Web.Endpoint, :load_from_system_env, []},
   load_from_system_env: true,
-  url: [host: "chicagoelixir.com", port: 443],
+  url: [host: "chicagoelixir.com", port: 80],
   cache_static_manifest: "priv/static/cache_manifest.json",
   secret_key_base: System.get_env("SECRET_KEY_BASE"),
   force_ssl: [hsts: true]

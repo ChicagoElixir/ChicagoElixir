@@ -16,6 +16,8 @@ defmodule ChicagoElixir.Web do
   below.
   """
 
+  alias AppWeb.Router.Helpers, as: Routes
+
   def controller do
     quote do
       use Phoenix.Controller, namespace: ChicagoElixir.Web
@@ -27,8 +29,9 @@ defmodule ChicagoElixir.Web do
 
   def view do
     quote do
-      use Phoenix.View, root: "lib/chicago_elixir/web/templates",
-                        namespace: ChicagoElixir.Web
+      use Phoenix.View,
+        root: "lib/chicago_elixir/web/templates",
+        namespace: ChicagoElixir.Web
 
       # Import convenience functions from controllers
       import Phoenix.Controller, only: [get_csrf_token: 0, get_flash: 2, view_module: 1]

@@ -1,5 +1,7 @@
 defmodule ChicagoElixir.Repo do
-  use Ecto.Repo, otp_app: :chicago_elixir
+  use Ecto.Repo,
+    otp_app: :chicago_elixir,
+    adapter: Ecto.Adapters.Postgres
 
   @doc """
   Dynamically loads the repository url from the

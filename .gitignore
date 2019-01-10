@@ -17,3 +17,5 @@ erl_crash.dump
 /config/*.secret.exs
 
 .env
+
+/assets/node_modules
