@@ -52,7 +52,7 @@ defmodule ChicagoElixir.Mixfile do
       {:timex, "~> 3.1"},
       {:exfmt, "~> 0.3.0"},
       {:html_sanitize_ex, "~> 1.3"},
-      {:bypass, "~> 0.8", only: :test}
+      {:bypass, "~> 1.0.0", only: :test}
     ]
   end
 
